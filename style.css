@@ -155,13 +155,16 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      flex-wrap: wrap;
+     
+      
     }
   
     .formitem {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      min-width: 0px;
+      margin: 0 5px;
     }
   
     .group {
@@ -198,7 +201,7 @@ body {
     }
   
     nav{
-      margin-top: 20px;
+      margin-top: 18px;
     }
   
     form button {
@@ -210,4 +213,24 @@ body {
       width: 150px;
     }
 
+
+    form select,
+    form input {
+      margin-bottom: 0px;
+      width: 100%;
+  
+
+  }
+  }
+  @media all and (max-width: 650px) {
+    .logo {
+      font-family: "Pangolin", cursive;
+      font-size: 40px;
+      color: #fff;
+      margin-top: 15px;
+    }
+
+    nav{
+      margin-top: 10px;
+    }
   }
